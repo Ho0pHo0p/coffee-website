@@ -69,7 +69,7 @@ button {
   font-family: inherit;
   font-size: inherit;
     
-  padding: 0px 12px 6px 12px;
+  padding: 0px 10px 6px 10px;
   
   background-color: var(--green);
   
@@ -112,11 +112,11 @@ header {
 }
 
 .bean-logo{
-  width: 25vw;
+  width: 50px;
 }
 
 .menu-btn {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .search-icon {
@@ -257,41 +257,35 @@ p{
   width: 60%;
 }
 
+/*----spacing ----*/
+
+.spacing-div{
+  height: 150px;
+}
+
 /*----Footer----*/
 
 footer {
-  margin: 1.5rem;
+  padding: 50px;
+
+  border-top: 8px solid var(--green);
+}
+
+footer h3 {
+  font-size: 1.5rem;
+}
+
+footer p {
+  font-size: 1rem;
+  line-height: 2;
 }
 
 .footer-logo-container {
-  margin-bottom: 2.5rem;
-
   text-align: center;
   font-family: var(--head-font);
   color: var(--green);
 }
 
-.footer-logo-container img {
-  margin: 1rem;
-  width: 40vw;
-}
-
-.footer-links-container {
-  height: 25vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr .5fr;
-  gap: 15px;
-}
-
-.footer-links-container p{
-  font-size: 1rem;
-  line-height: 2rem;
-}
-
-.footer-links-container h3 {
-  font-size: 1.5rem;
-}
 
 .corporate-info-container {
   grid-column: 1;
@@ -324,5 +318,113 @@ footer {
   display: none;
 }
 
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 768px) {
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  header {
+    height: 40px;
+  }
+
+  .section1 {
+    height: 60vh;
+    width: auto;
+  }
+
+  .section1 h3 {
+    font-size: 3.8rem;
+  }
+
+  .section2 {
+    flex-flow: row;
+    gap: 48px;
+    margin: 40px;
+    width: auto;
+  }
+
+  .section2-img {
+    width: 40%;
+  }
+
+  .bean-club-info {
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    gap: 20px;
+  }
+
+  .learn-more-btn {
+    font-size: 1.5rem;
+    width: 50%;
+  }
+
+  .section3 {
+    flex-flow: row;
+    width: auto;
+
+    margin: 40px;
+  }
+
+  .section3-img {
+    width: 40%;
+  }
+
+  .flavors-container {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+
+  .view-flavor-btn {
+    width: 50%;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 12px;
+
+    border-top: 8px solid var(--green);
+  }
+
+  .footer-logo-container {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .footer-logo-container img {
+    width: 150px;
+    margin: 15px;
+    margin-bottom: 1rem;
+  }
+
+  .corporate-info-container {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .socials {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .member-container {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .footer-learn-more {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+
+
+}
 
 

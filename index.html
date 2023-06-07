@@ -24,48 +24,54 @@
   </header>
   <section class="main-container">
   <section class="section1">
-    <h3>Small batch, fresh roasted coffee.</h3>
+    <div class="carousel">
+    <div class="filter">
+      <h3>Small batch, fresh roasted coffee.</h3>
+    </div>
+    </div>
   </section>
-  <section>
-    <img src="images/green_mugs.jpg">
+  <section class="section2">
+    <img src="images/green_mugs.jpg" class="section2-img">
     <h2>join the bean club</h2>
     <p>Sign up and get unlimited coffee when you pay $140/month.</p>
-    <button>Learn More</button>
+    <button class="learn-more-btn">Learn More</button>
   </section>
-  <section>
+  <section class="section3">
     <h2>view our  coffee flavors</h2>
-    <button>view flavors</button>
-    <img src="images/barista.jpg">
+    <button class="view-flavor-btn">view flavors</button>
+    <img src="images/barista.jpg" class="section3-img">
   </section>
-  <section>
+  <section class="section4">
     <h3>sign up and save 20% on next order</h3>
-    <form>
-      <input type="email">
-      <button type="submit">Sign Up Now</button>
+    <form class="sign-up">
+      <input type="email" placeholder="Email">
+      <button type="submit" class="sign-up-btn">Sign Up Now</button>
     </form>
   </section>
   </section>
   <footer>
-    <div>
-      <h3>Corporate Info</h3>
-      <a href="#">About Beans</a>
-      <a href="#">Sustainability</a>
-      <a href="#">Press</a>
+    <div class="footer-logo-container">
+      <img src="logo/bean_logo.svg">
+      <p>&copy Copyright Beans 2023</p>
     </div>
-    <div>
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-twitter"></i>
-    </div>
-    <div>
-      <i></i>
-      <h3><a href="#">Beans</a></h3>
-      <p>Copyright Beans 2023</p>
-    </div>
-    <div>
-      <h3>Become a Member</h3>
-      <a href="#">Join now and get 20% off your next order!</a>
-      <a href="#">Learn More</a>
+    <div class="footer-links-container">
+      <div class="corporate-info-container">
+        <h3>Corporate Info</h3>
+        <p><a href="#">About Beans</a></p>
+        <p><a href="#">Sustainability</a></p>
+        <p><a href="#">Press</a></p>
+        
+      </div>
+      <div class="socials">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="member-container">
+        <h3>Become a Member</h3>
+        <p><a href="#">Join now and get 20% off your next order!</a></p>
+      </div>
+      <p><a href="#" class="footer-learn-more">Learn More</a></p>
     </div>
   </footer>
   <script src="app.js"></script>

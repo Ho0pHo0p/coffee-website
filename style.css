@@ -50,6 +50,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+ 
 }
 ol, ul {
 	list-style: none;
@@ -76,6 +77,8 @@ body {
 
 h1, h2 , h3, h4 {
   font-family: var(--head-font);
+  font-size: 2rem;
+  color:var(--green);
 }
 
 img {
@@ -87,13 +90,69 @@ img {
 header {
   height: 15vh;
   width: auto;
-  margin: 1rem;
+  margin: 1rem 5vw ;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  border: 1px red solid;
+.button {
+  padding: .5px 10px;
+
+  background-color: var(--green);
+
+  color: #ffff;
+  font-family: var(--head-font);
+  font-size: 2rem;
+  border-radius: 15px;
+}
+
+.menu-btn {
+  font-size: 1rem;
+}
+
+.search-icon {
+  margin-left: 5px;
+  color: var(--green);
+  font-size: 1.2rem;
+}
+
+/*---- Main Container ----*/
+.main-container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+/*----Section 1-----*/
+
+.section1 {
+  height: 70vh;
+  text-align: center;
+}
+
+.section1 h3  {
+  font-size: 3rem;
+  color: #ffff;
+}
+
+.carousel {
+  background-image: url('images/cafe_wide.jpg');
+  background-size: cover;
+  background-repeat: none;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+.hidden {
+  display: none;
 }
 
 

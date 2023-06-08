@@ -170,32 +170,46 @@ header {
   margin: 1.5rem;
 
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   gap: 1.5rem;
 }
 
+.section2-img-container {
+  width: auto;
+  overflow: hidden;
+}
+
 .section2-img {
+  max-height: 500px;
   width: 100%;
+  object-fit: contain;
+}
+
+.bean-club-info {
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
 }
 
 .section2 h2{
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 p{
-  font-size: 1.7rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
 .learn-more-btn {
   font-size: 1.8rem;
-  width: 60%;
+  width: 45%;
 }
 
 /*---Section 3--- coffee flavors*/ 
 
 .section3 {
-  margin: 1.5rem;
+  margin: 4rem 1.5rem;
+
 
   display: flex;
   flex-flow: column wrap;
@@ -203,9 +217,21 @@ p{
 
 }
 
+.section3 h2 {
+  font-size: 4rem;
+}
+
+.flavors-container {
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
+}
+
 .view-flavor-btn {
   font-size: 1.8rem;
-  width: 60%;
+  width: 50%;
+
+  margin-bottom: 16px;
 }
 
 .section3-img {
@@ -215,6 +241,7 @@ p{
 /*----Section 4---sign up*/
 
 .section4 {
+  margin-top: 2rem;
   padding: 1.5rem;
   padding-bottom: 3rem;
 
@@ -359,14 +386,19 @@ footer p {
     width: auto;
   }
 
+  .section2-img-container {
+    width: 50vw;
+    height: 500px
+  }
+
   .section2-img {
-    width: 40%;
+    width: 100%;
   }
 
   .bean-club-info {
     display: flex;
     flex-flow: column;
-    width: 40%;
+    width: 300px;
     gap: 20px;
   }
 

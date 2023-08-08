@@ -77,6 +77,7 @@ button {
   font-family: var(--head-font);
   font-size: 2rem;
   border-radius: 40px;
+  cursor: pointer;
  }
 
 body {
@@ -117,10 +118,11 @@ header {
 
 .menu-btn {
   font-size: 1rem;
+  padding: 10px 20px;
 }
 
 .search-icon {
-  margin-left: 5px;
+  margin-left: 10px;
   color: var(--green);
   font-size: 1.2rem;
 }
@@ -268,7 +270,7 @@ p{
 
 .sign-up {
   height: 3em;
-  width: 100%;
+  width: 70%;
   background-color: #ffff;
   display: flex;
   justify-content: space-between;
@@ -401,9 +403,10 @@ footer p {
     gap: 20px;
   }
 
+
   .learn-more-btn {
-    font-size: 1.5rem;
-    width: 50%;
+    width: fit-content;
+    padding: 5px 40px;
   }
 
   .section3 {
@@ -424,6 +427,11 @@ footer p {
   }
 
   .view-flavor-btn {
+    width: fit-content;
+    padding: 5px 40px;
+  }
+
+  .sign-up {
     width: 50%;
   }
 
@@ -475,9 +483,22 @@ footer p {
     height: 70vh;
 
     background-image: url("images/cheers.jpg");
-    background-size: 
     background-repeat: none;
     background-position: 0px 0px;
+  }
+
+  .learn-more-btn {
+    width: fit-content;
+    padding: 5px 40px;
+  }
+
+  .view-flavor-btn {
+    width: fit-content;
+    padding: 5px 40px;
+  }
+
+  .sign-up {
+    width: 30%;
   }
 
 }

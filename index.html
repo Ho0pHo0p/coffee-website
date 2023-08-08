@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="svg" href="logo/bean_logo.svg" />
   <title>Beans</title>
   <script src="https://kit.fontawesome.com/4c73b9f07c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
@@ -18,7 +19,17 @@
       <button class="menu-btn btn" type="button">Menu</button>
     </div>
   </header>
-  <section class="main-container">
+  <section class="main">
+    <aside class="menu-cont hidden">
+      <ul class="menu">
+        <a href="#"><li>Join</li></a>
+        <a href="#"><li>Products</li></a>
+        <a href="#"><li>History</li></a>
+        <a href="#"><li>Info</li></a>
+        <a href="#"><li>Contact</li></a>
+      </ul>
+    </aside>
+  <div class="main-container">
   <section class="section1">
     <div class="carousel">
     <div class="filter">
@@ -31,25 +42,25 @@
     <div class="bean-club-info">
       <h2>join the bean club</h2>
       <p>Sign up and get unlimited coffee when you pay $140/month.</p>
-      <button class="learn-more-btn btn">Learn More</button>
+      <a class="learn-more-btn btn button">Learn More</a>
     </div>
   </section>
   <section class="section3">
     <div class="flavors-container">
       <h2>view our  coffee flavors</h2>
-      <button class="view-flavor-btn btn">View Flavors</button>
+      <a class="view-flavor-btn btn button">View Flavors</a>
      </div>
     <img src="images/barista.jpg" class="section3-img">
   </section>
   <section class="section4">
     <h3>sign up and save 20% on next order</h3>
     <form class="sign-up">
-      <input type="email" placeholder="Email">
+      <input type="email" placeholder="Email" class="sign-up-input">
       <button type="submit" class="sign-up-btn btn">Sign Up Now</button>
     </form>
   </section>
-  </section>
-  <div class="spacing-div"></div>
+  </div>
+</section>
   <footer>
     <div class="footer-logo-container">
       <img src="logo/bean_logo.svg">

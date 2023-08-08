@@ -50,7 +50,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
- 
 }
 ol, ul {
 	list-style: none;
@@ -80,9 +79,24 @@ button {
   cursor: pointer;
  }
 
+ .button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 14px;
+  background-color: var(--green);
+  color: #ffff;
+  font-family: var(--head-font);
+  font-size: 2rem;
+  border-radius: 40px;
+  cursor: pointer;
+  text-align: center;
+ }
+
 body {
   font-family: var(--type-font);
-  background-color: #ffff;
+  background-color: #f5f5f5
 }
 
 h1, h2 , h3, h4 {
@@ -103,7 +117,7 @@ img {
 /*--- Header --- */
 
 header {
-  height: 15vh;
+  height: 50px;
   width: auto;
   margin: 1rem 5vw ;
 
@@ -128,8 +142,40 @@ header {
 }
 
 /*---- Main Container ----*/
+
+.main {
+  display: flex;
+}
+
+.menu-cont {
+  position: static;
+  width:100%;
+  background-color: var(--brown);
+  padding-top: 50px;
+}
+
+.menu {
+  top: 20px;
+  display: flex;
+  flex-flow: column;
+  font-size: 2rem;
+}
+
+.menu li {
+  padding: 30px;
+  color: var(--peach);
+  font-family: var(--type-font);
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+}
+
+.menu li:hover {
+  background-color: var(--rust);
+}
+
 .main-container {
   display: flex;
+  overflow: hidden;
   flex-flow: column wrap;
   gap: 5vh;
 }
@@ -197,22 +243,19 @@ header {
   font-size: 4rem;
 }
 
-p{
+p {
   font-size: 2rem;
   line-height: 1.5;
 }
 
 .learn-more-btn {
   font-size: 1.8rem;
-  width: 45%;
 }
 
 /*---Section 3--- coffee flavors*/ 
 
 .section3 {
   margin: 4rem 1.5rem;
-
-
   display: flex;
   flex-flow: column wrap;
   gap: 1.5rem;
@@ -231,8 +274,6 @@ p{
 
 .view-flavor-btn {
   font-size: 1.8rem;
-  width: 50%;
-
   margin-bottom: 16px;
 }
 
@@ -246,12 +287,14 @@ p{
   margin-top: 2rem;
   padding: 1.5rem;
   padding-bottom: 3rem;
+  margin-bottom: 200px;
 
   background-color: var(--rust);
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   gap: 2rem;
+
 }
 
 .section4 h3 {
@@ -285,13 +328,6 @@ p{
   outline: none;
   width: 60%;
 }
-
-/*----spacing ----*/
-
-.spacing-div{
-  height: 150px;
-}
-
 /*----Footer----*/
 
 footer {
